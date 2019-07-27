@@ -15,7 +15,7 @@ learning_rate=0.0001
 kl_tolerance=0.5
 
 # Parameters for training
-NUM_EPOCHS = 10
+NUM_EPOCHS = 40
 DATA_DIR = "record"
 
 # TODO can this move?

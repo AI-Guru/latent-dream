@@ -1,5 +1,4 @@
 import sys
-#import progressbar
 import random
 import gym
 import gym_ple

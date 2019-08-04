@@ -21,7 +21,7 @@ DATA_DIR = "record"
 # TODO can this move?
 vae_model.reset_graph()
 
-vae = vae_model.ConvVAE(
+vae = vae_model.VariationalAutoencoder(
     z_size=z_size,
     batch_size=batch_size,
     learning_rate=learning_rate,

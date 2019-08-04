@@ -88,11 +88,11 @@ def create_observations_multiprocessing(target_number_of_experiences, steps_per_
             observation = env.reset()
             frame_count = random.randint(0, frame_skip)
             for step in range(steps_per_episode):
-                bar.update(1)
                 action, _ = model.predict(observation)
                 observation, rewards, dones, info = env.step(action)
                 if frame_count % frame_skip == 0:
                     observations.append(original_env.original_observation)
+                    bar.update(1)
                 frame_count += 1
                 if len(observations) == target_number_of_experiences:
                     break
